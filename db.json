@@ -27,16 +27,71 @@
       "username": "t",
       "password": "t",
       "id": 4
+    },
+    {
+      "email": "benzsirasit1203@hotmail.com",
+      "name": "b",
+      "username": "b",
+      "password": "b",
+      "id": 5
+    },
+    {
+      "email": "benzsirasit1203@hotmail.com",
+      "name": "b",
+      "username": "b",
+      "password": "b",
+      "id": 6
     }
   ],
   "posts": [
     {
-      "post_id": "5",
-      "image": "https://www.smashingmagazine.com/wp-content/uploads/2015/06/10-dithering-opt.jpg",
+      "post_id": "3",
       "text": "3",
       "log": "99.59516939999999",
       "lat": "7.5115102",
-      "id": 13
+      "id": 3
+    },
+    {
+      "post_id": "1",
+      "text": "adg",
+      "log": "99.59516939999999",
+      "lat": "7.5115102",
+      "id": 4
+    },
+    {
+      "post_id": "1",
+      "text": "adgafg",
+      "log": "99.59516939999999",
+      "lat": "7.5115102",
+      "id": 5
+    },
+    {
+      "post_id": "1",
+      "text": "asdfsdf",
+      "log": "99.59516939999999",
+      "lat": "7.5115102",
+      "id": 6
+    },
+    {
+      "post_id": "1",
+      "text": "asdgsdfgfhdfhdh",
+      "log": "99.59516939999999",
+      "lat": "7.5115102",
+      "id": 7
+    },
+    {
+      "post_id": "6",
+      "text": "SDGAFDG",
+      "log": "99.59516939999999",
+      "lat": "7.5115102",
+      "id": 8
+    },
+    {
+      "post_id": "6",
+      "text": "asdgasdfg",
+      "log": "99.59516939999999",
+      "lat": "7.5115102",
+      "id": 9
     }
   ]
 }

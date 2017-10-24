@@ -59,17 +59,13 @@ $(document).ready(function () {
         var lat_post = localStorage.getItem("lat");
         var log_post = localStorage.getItem("log");
         var text_post = $("#comment").val();
-        var img_post = localStorage.getItem("img");
         $.post("http://localhost:3000/posts", {
             post_id: id_post,
-            image: img_post,
             text: text_post,
             log: log_post,
             lat: lat_post
         });
-        localStorage.removeItem("lat");
-        localStorage.removeItem("log");
-        localStorage.removeItem("img");
+        
         window.location = "Home.html";
     });
 
@@ -77,19 +73,19 @@ $(document).ready(function () {
     $.getJSON("http://localhost:3000/posts", function (data) {
         for (i = 0; i < data.length; i++) {
             var id_post = data[i].post_id;
-            var image = data[i].image;
+            
             var comment = data[i].text;
-            search_name(id_post, image, comment);
+            search_name(id_post, comment);
         }
     });
-    function search_name(id_post, image, comment) {
+    function search_name(id_post, comment) {
         $.getJSON("http://localhost:3000/regis", function (data) {
             for (i = 0; i < data.length; i++) {
                 if (id_post == data[i].id) {
-                    $("#show_post").prepend("<tr id=\"name_bar\"><td><br><p><b>What happen : </b>" + comment + "</p><br></td></tr>");
-                    $("#show_post").prepend("<tr><td id=\"remove_space\" align=\"center\"><img id=\"img_post_show\" src=" + image + "></td></tr>");
+                    
+                    $("#show_post").prepend("<tr id=\"name_bar\"><td><br><p>" + comment + "</p><br></td></tr>");
                     $("#show_post").prepend("<tr id=\"name_bar\"><td><br><p id=\"name_p\"><b>" + data[i].name + "</b></p></td></tr>");
-                    $("#show_post").prepend("<tr><td id=\"space\"><br></td></tr>");
+                    $("#show_post").prepend("<tr bgcolor=\"red\"><td id=\"space\" ><br></td></tr>");
                 }
             }
         });
