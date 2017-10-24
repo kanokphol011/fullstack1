@@ -133,7 +133,7 @@ $(document).ready(function () {
             }
         });
     }
-    //setting
+    //account
     $.getJSON("http://localhost:3000/regis", function (data) {
         for (i = 0; i < data.length; i++) {
             if (data[i].id == localStorage.getItem("id")) {
@@ -153,7 +153,7 @@ $(document).ready(function () {
                         data: data[position]
                     });
                     console.log(data[position]);
-                    window.location = "setting.html";
+                    window.location = "account.html";
                 });
             }
         }

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RestPin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default" id="navBar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="pageHome.html" id="Headtext">RESTPIN</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right" id="rightNav">
+                    <li><a class="_l8p4s" href="Home.html">Home</a></li>
+                    <li>
+                        <h1 id="b">|</h1>
+                    </li>
+                    <li><a class="_l8p4s" href="postRest.html">POST</a></li>
+                    <li>
+                        <h1 id="b">|</h1>
+                    </li>
+                    <li><a class="_l8p4s" href="account.html">Account</a></li>
+                    <li>
+                        <h1 id="b">|</h1>
+                    </li>
+                    <li><a class="_l8p4s" href="index.html" id="logout">Log out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4" id="main">
+            <table align="center" id="setting_post">
+                <tr>
+                    <td>
+                        <br>
+                        <p id="setting_">Email:</p>
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" id="email_setting" value="">
+                    </td>
+                    <td id="remove_space"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <p id="setting_">Name:</p>
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" id="name_setting" value="">
+                    </td>
+                    <td id="remove_space"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <p id="setting_">Username:</p>
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" id="user_setting" value="">
+                    </td>
+                    <td id="remove_space"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <p id="setting_">Password:</p>
+                    </td>
+                    <td>
+                        <input type="password" class="form-control" id="password_setting" value="">
+                    </td>
+                    <td id="remove_space"></td>
+                </tr>
+                <tr align="center">
+                    <td></td>
+                    <td> <button type="button" class="btn btn-primary btn-block btn-xs" id="done_btn">Done</button><br></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div id="main">
+                <table id="delete_post" align="center">
+                </table>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+</script>
+
+</html>
