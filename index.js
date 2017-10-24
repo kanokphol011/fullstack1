@@ -16,7 +16,7 @@ $(document).ready(function () {
             for (i = 0; i < data.length; i++) {
                 if (data[i].username == $("#name_login").val() && data[i].password == $("#pass_login").val()) {
                     localStorage.setItem("id", data[i].id);
-                    window.location = "pageHome.html";
+                    window.location = "Home.html";
                     chack++;
                 }
                 if (i == data.length - 1 && chack == 0) {
