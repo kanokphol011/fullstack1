@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RestPin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGoQlGPUNY5D8QPrbMQpfBJJiJWxHNxoY"></script>
+    </script>
+    
+
+</head>
+
+<body>
+        <nav class="navbar navbar-default" id="navBar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="Home.html" id="Headtext">RESTPIN</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right" id="rightNav">
+                        <li><a class="_l8p4s" href="Home.html">Home</a></li>
+                        <li>
+                            <h1 id="b">|</h1>
+                        </li>
+                        <li><a class="_l8p4s" href="postRest.html">POST</a></li>
+                        <li>
+                            <h1 id="b">|</h1>
+                        </li>
+                        <li><a class="_l8p4s" href="account.html">Account</a></li>
+                        <li>
+                            <h1 id="b">|</h1>
+                        </li>
+                        <li><a class="_l8p4s" href="index.html" id="logout">Log out</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8" id="main">
+            <table align="center">
+                <tr>
+                    <td align="center">
+                        <h3><b>Post New RestPin</b></h3>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td align="center">
+                        <br><img src="#" id="img" alt="">
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td align="center">
+                        <br><input type="file" onchange="readURL(this);">
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td align="center">
+                        <br><textarea class="form-control" rows="5" id="comment" placeholder="comment"></textarea>
+                    </td>
+                </tr>
+                <td align="center">
+                        <br><button class="btn btn-primary btn-block" id="location"><b>Location</b></button>
+                    </td>
+                <tr align="center">
+                    <td>
+                        <br><div id="map"></div><br>
+                    </td>
+                </tr>
+                <tr align="center">
+                        <td align="center">
+                            <button type="button" class="btn btn-success" id="post"><b>Post</b></button><br>
+                        </td>
+                    </tr>
+            </table>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</body>
+
+</html>

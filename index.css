@@ -8,7 +8,8 @@
     background-color: #99C0EC; 
 }
 body{
-    background-color: #f2f2f2; 
+    background-color: #f2f2f2;
+    background-image: url("https://i.stack.imgur.com/jGlzr.png"); 
 }
 #b{
     color: #c7c7c7;
@@ -46,10 +47,7 @@ a{
     height: 50%;
     width: 50%;
 }
-#remove{
-    color: #E77272;
-    
-}
+
 #show_post{
     width: 100%;
 }
@@ -87,10 +85,7 @@ tr{
 #searchPin_border{
     border: 1px solid #ccc!important;
 }
-#delete{
-    width: 100px;
-    height: 100px;
-}
+
 #img_post_delete {
     height: 300px;
     width: 300px;

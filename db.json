@@ -15,11 +15,28 @@
       "id": 2
     },
     {
-      "email": "a",
-      "name": "a",
-      "username": "a",
-      "password": "a",
+      "email": "f",
+      "name": "f",
+      "username": "f",
+      "password": "f",
       "id": 3
+    },
+    {
+      "email": "t",
+      "name": "t",
+      "username": "t",
+      "password": "t",
+      "id": 4
+    }
+  ],
+  "posts": [
+    {
+      "post_id": "5",
+      "image": "https://www.smashingmagazine.com/wp-content/uploads/2015/06/10-dithering-opt.jpg",
+      "text": "3",
+      "log": "99.59516939999999",
+      "lat": "7.5115102",
+      "id": 13
     }
   ]
 }

@@ -53,7 +53,7 @@ $(document).ready(function () {
             map: map
         });
     }
-    //post
+    //postRest
     $("#post").click(function () {
         var id_post = localStorage.getItem("id");
         var lat_post = localStorage.getItem("lat");
@@ -70,7 +70,7 @@ $(document).ready(function () {
         localStorage.removeItem("lat");
         localStorage.removeItem("log");
         localStorage.removeItem("img");
-        window.location = "pageHome.html";
+        window.location = "Home.html";
     });
 
     //home
@@ -158,21 +158,7 @@ $(document).ready(function () {
             }
         }
     });
-    //delete
-    $.getJSON("http://localhost:3000/posts", function (data) {
-        var id = localStorage.getItem("id");
-        for (i = 0; i < data.length; i++) {
-            if (data[i].post_id == id) {
-                var id2 = data[i].id;
-                var image = data[i].image;
-                var comment = data[i].text;
-                $("#delete_post").prepend("<tr id=\"delete\"><td id=\"name_bar\"><br><p><b>What happen : </b>" + comment + "</p><br></td></tr>");
-                $("#delete_post").prepend("<tr id=\"delete\"><td align=\"center\"><img id=\"img_post_delete\" src=" + image + "></td></tr>");
-                $("#delete_post").prepend("<tr id=\"delete\"><td align=\"center\"><button type=\"button\" class=\"btn btn-danger\" onclick=\"deleter("+id2+")\">Delete</button></td></tr>");
-                $("#delete_post").prepend("<tr id=\"delete\"><td id=\"space\"><br></td></tr>");
-            }
-        }
-    });
+    
 });
 //picture
 function readURL(input) {
@@ -188,12 +174,4 @@ function readURL(input) {
         };
         reader.readAsDataURL(input.files[0]);
     }
-}
-//delete
-function deleter(id){
-    $.ajax({
-        url: "http://localhost:3000/posts/"+id+"",
-        type: "DELETE"
-    });
-    window.location = "setting.html";
 };
