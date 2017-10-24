@@ -1,0 +1,97 @@
+#Headtext{
+    padding-left: 200px; 
+}
+#rightNav{
+    padding-right: 200px; 
+}
+#navBar{   
+    background-color: white; 
+}
+body{
+    background-color: #f2f2f2; 
+}
+#b{
+    color: #c7c7c7;
+    font-size: 16px;
+    line-height: 29px;
+    margin: 8px;
+   
+}
+a._l8p4s, a._l8p4s:visited {
+    font-weight: 600;
+    line-height: 28px;
+}
+input{
+    margin: 0 40px 6px;
+}
+#confirmBtn{
+    padding: 4px 40px;
+    padding-bottom: 30px;
+}
+a{
+    color: white;
+}
+#show_location{
+    margin: auto;
+}
+#map {
+    height: 400px;
+    width: 600px;
+   }
+.map_page_{
+    height: 443px;
+    width: 658px;
+}
+#img{
+    height: 50%;
+    width: 50%;
+}
+#remove{
+    color: #E77272;
+    
+}
+#show_post{
+    width: 100%;
+}
+#setting_post{
+    width: 100%;
+}
+#name_bar{
+    border: 1px solid #ccc!important;
+}
+td{
+    padding: 0.01em 16px;
+    padding-right: 16px;
+    background-color: white 
+}
+#name_p{
+    margin-bottom: 20px;
+}
+tr{
+    background-color: white ;
+    width: 120%
+}
+#space{
+    background-color: #f2f2f2;
+}
+#img_post_show{
+    height: 600px;
+    width: 664px;
+}
+#remove_space{
+    padding: 0px;
+    padding-right: 0px;
+    width: 50px;
+    height: 50px;
+}
+#searchPin_border{
+    border: 1px solid #ccc!important;
+}
+#delete{
+    width: 100px;
+    height: 100px;
+}
+#img_post_delete {
+    height: 300px;
+    width: 300px;
+}
